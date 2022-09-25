@@ -1,0 +1,48 @@
+@use "../../variables" as *;
+.card {
+  background-color: $white_smoke;
+  border: none;
+  border-radius: 0;
+  .card-img {
+    border-radius: 0;
+    position: relative;
+    .card-title {
+      color: $orange_bistre;
+      font-weight: 700;
+      font-size: $fontsize-l;
+      padding-left: 6px;
+      position: absolute;
+      padding-top: 0px;
+      top: 0;
+      left: 0;
+    }
+    .vector {
+      width: 0;
+      position: absolute;
+      border-top: solid 150px $white;
+      border-right: solid 150px transparent;
+      top: 0px;
+    }
+    .picture {
+      overflow: hidden;
+      width: 100%;
+      .card-1 {
+        width: 100%;
+        object-fit: cover;
+        @media screen and (min-width: $breakpoint-md) {
+          transition: 0.5s ease;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  .card-body {
+    font-size: $fontsize-s;
+    padding-bottom: 32px;
+    .button {
+      margin: auto;
+    }
+  }
+}
