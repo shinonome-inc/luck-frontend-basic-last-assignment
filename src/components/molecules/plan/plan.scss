@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 .plan-odd {
   text-align: center;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
   .title {
     padding: 20px;
     background-color: $orange_zorba;
@@ -36,7 +39,9 @@
     padding: 20px;
     font-size: $fontsize-s;
     font-weight: 400;
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
   }
 }
 
@@ -51,7 +56,7 @@
   }
   .Frame4 {
     background-color: $gray_desertStorm;
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
     .Frame3 {
       color: $orange_bistre;
       margin: 0px auto;
@@ -78,6 +83,6 @@
     padding: 20px;
     font-size: $fontsize-s;
     font-weight: 400;
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
   }
 }
