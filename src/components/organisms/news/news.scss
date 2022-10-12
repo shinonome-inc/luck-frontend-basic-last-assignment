@@ -1,0 +1,59 @@
+@use "../../variables" as *;
+@use "../../molecules/news-and-events-title/news-and-events-title.scss" as *;
+@use "../../molecules/news-and-events-more/news-and-events-more.scss" as *;
+
+.news {
+  .news-and-events-title {
+    & > h2 {
+      font-size: $fontsize-xxl;
+    }
+  }
+  .group4 {
+    margin-bottom: 30px;
+    border-top: 1px solid $gray_gainsboro;
+    .information {
+      padding: 20px 0px 20px 20px;
+      color: $black;
+      border-right: 1px solid $gray_gainsboro;
+      border-left: 1px solid $gray_gainsboro;
+      border-bottom: 1px solid $gray_gainsboro;
+      .news-link {
+        color: $black;
+        transition: 0.2s;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .date {
+        margin-bottom: 10px;
+        color: $gray_nobel;
+      }
+      .news-header {
+        font-size: $fontsize-m;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+    }
+  }
+  .more {
+    text-align: right;
+    font-size: $fontsize-s;
+    color: $black;
+    .news-and-events-more {
+      margin-right: 16px;
+      color: $black;
+      text-decoration: none;
+      transition: 0.2s;
+      &:hover {
+        color: $gray_nobel;
+      }
+    }
+    .vector {
+      margin-left: 16px;
+    }
+  }
+}
