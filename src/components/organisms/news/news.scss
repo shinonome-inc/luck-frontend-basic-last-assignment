@@ -6,12 +6,15 @@
   .news-and-events-title {
     & > h2 {
       font-size: $fontsize-xxl;
+      @media screen and (max-width: $breakpoint-md) {
+        font-size: 20px;
+      }
     }
   }
   .group4 {
     margin-bottom: 30px;
     border-top: 1px solid $gray_gainsboro;
-    .information {
+    article {
       padding: 20px;
       color: $black;
       border: 1px solid $gray_gainsboro;
