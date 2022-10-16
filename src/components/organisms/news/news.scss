@@ -12,31 +12,28 @@
   .group4 {
     margin-bottom: 30px;
     border-top: 1px solid $gray_gainsboro;
-    article {
-      padding: 20px;
-      height: 85px;
+    a {
+      text-decoration: none;
       color: $black;
-      border: 1px solid $gray_gainsboro;
-      border-top: none;
-      color: $black;
-      transition: ease;
       &:hover {
-        text-decoration: none;
+        color: $orange_bistre;
       }
-
-      .date {
-        font-size: $fontsize-xs;
-        margin-bottom: 10px;
-        color: $gray_nobel;
-      }
-      .news-header {
-        margin-bottom: 0px;
-        font-size: $fontsize-m;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        &:hover {
-          color: $orange_bistre;
+      article {
+        padding: 16px;
+        border: 1px solid $gray_gainsboro;
+        border-top: none;
+        transition: ease;
+        .date {
+          font-size: $fontsize-xs;
+          margin-bottom: 10px;
+          color: $gray_nobel;
+        }
+        .news-header {
+          margin-bottom: 0px;
+          font-size: $fontsize-m;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
         }
       }
     }
