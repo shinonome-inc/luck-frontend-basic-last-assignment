@@ -1,6 +1,4 @@
 @use "../../variables" as *;
-@use "../../molecules/news-and-events-title/news-and-events-title.scss" as *;
-@use "../../molecules/news-and-events-more/news-and-events-more.scss" as *;
 
 .news {
   .news-and-events-title {
@@ -16,16 +14,16 @@
     border-top: 1px solid $gray_gainsboro;
     article {
       padding: 20px;
+      height: 85px;
       color: $black;
       border: 1px solid $gray_gainsboro;
       border-top: none;
-      .news-link {
-        color: $black;
-        transition: 0.2s;
-        &:hover {
-          text-decoration: none;
-        }
+      color: $black;
+      transition: ease;
+      &:hover {
+        text-decoration: none;
       }
+
       .date {
         font-size: $fontsize-xs;
         margin-bottom: 10px;
