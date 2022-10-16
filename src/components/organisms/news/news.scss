@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+
+.news {
+  display: flex;
+  flex-direction: column;
+  .group4 {
+    margin-bottom: 30px;
+    border-top: 1px solid $gray_gainsboro;
+    a {
+      text-decoration: none;
+      color: $black;
+      &:hover {
+        color: $orange_bistre;
+      }
+      article {
+        padding: 17px;
+        border: 1px solid $gray_gainsboro;
+        border-top: none;
+        transition: all 0.2s 0s ease;
+        .date {
+          font-size: $fontsize-xs;
+          margin-bottom: 10px;
+          color: $gray_nobel;
+          line-height: 1;
+        }
+        .news-header {
+          margin-bottom: 0px;
+          font-size: $fontsize-m;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          line-height: 23px;
+        }
+        h3 {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
