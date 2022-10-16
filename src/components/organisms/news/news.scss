@@ -13,7 +13,7 @@
         color: $orange_bistre;
       }
       article {
-        padding: 19px;
+        padding: 17px;
         border: 1px solid $gray_gainsboro;
         border-top: none;
         transition: all 0.2s 0s ease;
@@ -30,9 +30,6 @@
           white-space: nowrap;
           overflow: hidden;
           line-height: 23px;
-        }
-        h3 {
-          font-weight: 400;
         }
       }
     }
