@@ -1,14 +1,6 @@
 @use "../../variables" as *;
 
 .news {
-  .news-and-events-title {
-    & > h2 {
-      font-size: $fontsize-xxl;
-      @media screen and (max-width: $breakpoint-md) {
-        font-size: 20px;
-      }
-    }
-  }
   .group4 {
     margin-bottom: 30px;
     border-top: 1px solid $gray_gainsboro;
@@ -19,14 +11,15 @@
         color: $orange_bistre;
       }
       article {
-        padding: 16px;
+        padding: 20px;
         border: 1px solid $gray_gainsboro;
         border-top: none;
-        transition: ease;
+        transition: all 0.2s 0s ease;
         .date {
           font-size: $fontsize-xs;
           margin-bottom: 10px;
           color: $gray_nobel;
+          line-height: 1;
         }
         .news-header {
           margin-bottom: 0px;
