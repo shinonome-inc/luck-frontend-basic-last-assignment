@@ -1,41 +1,151 @@
 @use "../../variables" as *;
-.navbar {
-  background-color: $black_50;
-  flex-direction: row;
-  padding: 33.01px 50px 33.01px 30px;
+.header-xl {
   @media screen and (max-width: $breakpoint-xl) {
     display: none;
   }
-  .navbar-expand-lg {
-    padding-right: 0%;
-  }
-  .container-fluid {
+  .navbar {
+    background-color: $black_50;
+    flex-direction: row;
     padding: 0%;
-  }
-  .navbar-brand {
-    padding: 0%;
-    margin-right: 0%;
-    .collapse {
+    font-size: $fontsize-s;
+    .navbar-expand-lg {
+      padding-right: 0%;
+    }
+    .container-fluid {
+      padding: 0%;
+    }
+    .navbar-brand {
+      padding: 0%;
+      margin-right: 0%;
+      padding: 33.01px 50px 33.01px 30px;
+      .navbar-brand-img {
+        width: 140px;
+        height: 23.99px;
+      }
+    }
+    .navbar-collapse {
+      padding-right: 30px;
       .navbar-nav {
         .nav-item {
-          .dropdown-item {
+          .dropdown-menu {
+            display: none;
+            padding: 0%;
+            margin: 0%;
+          }
+          &:hover {
+            .dropdown-menu {
+              display: block;
+              border-radius: 0%;
+              border: 0px;
+              .dropdown-item {
+                font-size: $fontsize-s;
+                padding: 18px;
+                width: 220px;
+                height: 56px;
+                align-items: auto;
+                color: $white;
+                background-color: $black;
+                transition: 0.2s;
+                &:hover {
+                  background-color: $orange_bistre;
+                }
+              }
+            }
+          }
+          .nav-link {
+            padding: 37px 20px;
             color: $white;
-            background-color: $black;
             transition: 0.2s;
             &:hover {
               color: $gray_nobel;
             }
           }
-          .nav-link {
-            padding: 35px 20px;
-            color: $white;
-          }
         }
       }
     }
-    .navbar-brand-img {
-      width: 140px;
-      height: 23.99px;
+  }
+}
+
+.header-lg {
+  @media screen and (min-width: $breakpoint-xl) {
+    display: none;
+  }
+  .navbar {
+    background-color: $black;
+    padding: 0%;
+    .navbar-expand-lg {
+      padding-right: 0%;
+    }
+    .container-fluid {
+      padding: 0%;
+    }
+    .navbar-brand {
+      padding: 0%;
+      margin-right: 0%;
+      padding: 19.72px 16px;
+      .navbar-brand-img {
+        width: 120px;
+        height: 20.56px;
+      }
+    }
+    .navbar-toggler {
+      padding: 19.72px 16px;
+      outline: none;
+      .humberger-icon-img {
+        width: 15px;
+        height: 19px;
+      }
+    }
+  }
+}
+.collapse2 {
+  @media screen and (min-width: $breakpoint-xl) {
+    display: none;
+  }
+  font-size: $fontsize-s;
+  .list-group {
+    border-radius: 0%;
+    background-color: $black;
+    .list-group-item {
+      background-color: $black;
+      padding: 15px 16px;
+      border: 0%;
+    }
+    .list-item1 {
+      color: $white;
+      text-decoration: none;
+    }
+    .parent {
+      display: flex;
+      justify-content: space-between;
+      .list-item2 {
+        color: $white;
+        text-decoration: none;
+      }
+      .navbar-toggler {
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .collapse3 {
+      .list-group {
+        border-radius: 0%;
+        background-color: $black;
+        .list-group-item {
+          background-color: $black;
+          padding: 15px 28px;
+          border: 0%;
+        }
+        .list-item4 {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+    .list-item3 {
+      color: $white;
+      text-decoration: none;
     }
   }
 }
